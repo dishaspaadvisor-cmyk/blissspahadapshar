@@ -1,0 +1,21 @@
+{
+  "name": "Bliss Spa",
+  "short_name": "Bliss Spa",
+  "description": "Luxury Spa in Hadapsar Pune",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4B352B",
+  "icons": [
+    {
+      "src": "/logo/FAVBAR S (3).png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/logo/FAVBAR S (3).png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
