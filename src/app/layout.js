@@ -179,58 +179,8 @@ export default function RootLayout({ children }) {
             GOOGLE ADS PURCHASE CONVERSION FUNCTION
         ========================================= */}
 
-        <Script
-          id="google-ads-purchase-conversion-function"
-          strategy="afterInteractive"
-        >
-          {`
-            window.gtag_report_conversion = function(url) {
-              var callback = function() {
-                if (typeof url !== 'undefined') {
-                  window.location = url;
-                }
-              };
 
-              if (typeof window.gtag === 'function') {
-                window.gtag('event', 'conversion', {
-                  'send_to': 'AW-18368569547/jlRtCNKJtt0cEMvB6LZE',
-                  'value': 1.0,
-                  'currency': 'INR',
-                  'transaction_id': '',
-                  'event_callback': callback
-                });
 
-                return false;
-              }
-
-              if (typeof url !== 'undefined') {
-                window.location = url;
-              }
-
-              return false;
-            };
-          `}
-        </Script>
-
-        {/* =========================================
-            PURCHASE CONVERSION PAGE EVENT
-        ========================================= */}
-
-        <Script
-          id="google-ads-purchase-conversion-event"
-          strategy="afterInteractive"
-        >
-          {`
-            if (typeof window.gtag === 'function') {
-              window.gtag('event', 'conversion', {
-                'send_to': 'AW-18368569547/jlRtCNKJtt0cEMvB6LZE',
-                'value': 1.0,
-                'currency': 'INR',
-                'transaction_id': ''
-              });
-            }
-          `}
-        </Script>
 
         {/* =========================================
             WEBSITE
